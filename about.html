@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/75959ada6e.js" crossorigin="anonymous"></script>
+    <title>Super Duper Ice Cream</title>
+</head>
+    <header>
+        <div class="container">
+          <div id="branding">
+            <h1>Super Duper Ice Cream Shop</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./flavors.html">Flavors</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div onclick="myFunction()" class="dropdown">
+              <i class="fas fa-bars dropbtn" style="font-size: 50px;"></i>
+          <div id="myDropdown" class="dropdown-content">
+              <a href="./index.html">Home</a>
+              <a href="./about.html">About</a>
+              <a href="./flavors.html">Flavors</a>
+              <a href="./contact.html">Contact</a>
+          </div>
+          </div>
+          </nav>
+        </div>
+    </header>
+
+    <section id="banner">
+      <div class="container">
+      <div class="logo"><img class="iceBanner" src="./hoemImage2.jpg" alt=""></div> 
+      </div>
+    </section>
+
+
+    <section2>
+      <div id="about" class="container">
+        <h1>ABOUT</h1>
+      </div>
+    </section2>
+
+    <div id="section3" class="container">
+      <div class="description">
+        <span>Super duper Ice Cream is the best ic cream in the world. Founded in 2019, Manthaniel Icereamo wanted ice cream to be super all the time. He used the same stuff that makes rubber duckies cry to make it taste so good.</span>
+      </div>
+      <div class="about-box">
+        <img src="./aboutImage.jpg" alt="about">
+      </div>
+      <div class="about-box">
+        <span>Our History</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at ullamcorper nisl, sed efficitur augue. Ut sed ante vitae lorem varius consectetur. Donec et ligula dignissim, euismod erat quis, venenatis ante. Suspendisse potenti. Morbi facilisis eget ligula eget pellentesque. Praesent tempor ut diam vitae varius. Praesent vitae lacus at arcu luctus tempor non eget erat. Ut hendrerit neque non turpis blandit laoreet. Mauris faucibus ipsum elementum, ornare nibh vel, vulputate felis. Quisque lobortis eleifend risus, ut condimentum tellus. Praesent malesuada sapien sed ante mattis, eu mollis purus suscipit. Duis maximus mattis nunc, id euismod magna accumsan nec. Suspendisse rutrum condimentum sodales.</p>
+      </div>
+      <div class="about-box">
+        <img src="./homeImage1.jpg" alt="about">
+      </div>
+      <div class="about-box">
+        <span>Our Flavors</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at ullamcorper nisl, sed efficitur augue. Ut sed ante vitae lorem varius consectetur. Donec et ligula dignissim, euismod erat quis, venenatis ante. Suspendisse potenti. Morbi facilisis eget ligula eget pellentesque. Praesent tempor ut diam vitae varius. Praesent vitae lacus at arcu luctus tempor non eget erat. Ut hendrerit neque non turpis blandit laoreet. Mauris faucibus ipsum elementum, ornare nibh vel, vulputate felis. Quisque lobortis eleifend risus, ut condimentum tellus. Praesent malesuada sapien sed ante mattis, eu mollis purus suscipit. Duis maximus mattis nunc, id euismod magna accumsan nec. Suspendisse rutrum condimentum sodales.</p>
+      </div>
+      </div>
+
+      
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="box"><h1>Our Company</h1>
+          <ul>
+            <li>About Us</li>
+            <li>Terms of Use</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="box"><h1>Employment</h1>
+        <ul>
+          <li>Career Opportunites </li>
+        </ul>
+        </div>
+        <div class="box"><h1>Social Media</h1>
+          <ul>
+            <li><i class="fab fa-facebook-square"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter-square"></i></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+              }
+          }
+          }
+      }
+      </script>
+</body>
+</html>

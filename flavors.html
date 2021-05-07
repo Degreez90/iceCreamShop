@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/75959ada6e.js" crossorigin="anonymous"></script>
+    <title>Super Duper Ice Cream</title>
+</head>
+    <header>
+        <div class="container">
+          <div id="branding">
+            <h1>Super Duper Ice Cream Shop</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./flavors.html">Flavors</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div onclick="myFunction()" class="dropdown">
+              <i class="fas fa-bars dropbtn" style="font-size: 50px;"></i>
+          <div id="myDropdown" class="dropdown-content">
+              <a href="./index.html">Home</a>
+              <a href="./about.html">About</a>
+              <a href="./flavors.html">Flavors</a>
+              <a href="./contact.html">Contact</a>
+          </div>
+          </div>
+          </nav>
+        </div>
+    </header>
+
+    <section id="banner">
+      <div class="container">
+      <div class="logo"><img class="iceBanner" src="./hoemImage2.jpg" alt=""></div> 
+      </div>
+    </section>
+
+
+    <section2>
+      <div id="about" class="container">
+        <h1>FLAVORS</h1>
+      </div>
+    </section2>
+
+      <div id="flavors" class="container">
+      <div class="flavors-box">
+        <div class="flavors"><div class="popup" onclick="myFunction1()" >
+          <span class="popuptext" id="myPopup">Blue, Taste the sky!</span>
+          <img src="./flavorImages/icecream1.jpg" alt="">
+        </div>
+          <div>
+            <ul>
+              <li>Blue</li>
+              <li>$2.99</li>
+              <button>Buy</button>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="flavors-box">
+        <div class="flavors"><div class="popup" onclick="myFunction2()" >
+          <span class="popuptext" id="myPopup2">Chocolate, smooth with delicious flavor!</span>
+          <img src="./flavorImages/icecream2.jpg" alt="">
+          </div>
+          <div>
+            <ul>
+              <li>Chocolate</li>
+              <li>$1.99</li>
+              <button>Buy</button>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="flavors-box">
+        <div class="flavors"><div class="popup" onclick="myFunction3()" >
+          <span class="popuptext" id="myPopup3">Vanilla, creamy distinct flavor!</span>
+          <img src="./flavorImages/icecream3.jpg" alt="">
+          </div>
+          <div>
+            <ul>
+              <li>Vanilla</li>
+              <li>$1.99</li>
+              <button>Buy</button>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="flavors-box">
+        <div class="flavors"><div class="popup" onclick="myFunction4()" >
+          <span class="popuptext" id="myPopup4">The Trio, a knockout combination of flavors!</span>
+          <img class="popup" src="./flavorImages/icecream4.jpg" alt="">
+          </div>
+          <div>
+            <ul>
+              <li>The Trio</li>
+              <li>$3.99</li>
+              <button>Buy</button>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <footer>
+      <div class="container">
+        <div class="box"><h1>Our Company</h1>
+          <ul>
+            <li>About Us</li>
+            <li>Terms of Use</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="box"><h1>Employment</h1>
+        <ul>
+          <li>Career Opportunites </li>
+        </ul>
+        </div>
+        <div class="box"><h1>Social Media</h1>
+          <ul>
+            <li><i class="fab fa-facebook-square"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter-square"></i></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function myFunction1() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+        }
+      </script>
+      <script>
+        function myFunction2() {
+          var popup2 = document.getElementById("myPopup2");
+          popup2.classList.toggle("show");
+        }
+        </script>
+      <script>
+        function myFunction3() {
+          var popup2 = document.getElementById("myPopup3");
+          popup2.classList.toggle("show");
+        }
+      </script>
+      <script>                
+        function myFunction4() {
+          var popup2 = document.getElementById("myPopup4");
+          popup2.classList.toggle("show");
+        }
+        </script>
+        <script>
+          /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                  }
+              }
+              }
+          }
+          </script>
+</body>
+</html>

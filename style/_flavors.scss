@@ -1,0 +1,55 @@
+#flavors{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #ffffff;
+  max-width: $mainWidth;
+  border-width: 0px 1px 1px 1px;
+  border-style:solid;
+  border-color: rgb(216, 216, 216);
+  height: 100%;
+}
+
+.flavors-box{
+  padding: 80px 0px 5px 20px;
+min-width: 20%;
+height: 500px;
+}
+
+
+.flavors img{
+  width: 240px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.flavors ul:nth-child(1){
+  text-align: center;
+  position: relative;
+  list-style-type: none;
+  margin: auto;
+}
+
+.flavors li{
+  color: #535353;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  font-size: 12px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+button{
+  position: relative;
+  background-color: #ff5656;
+  border: none;
+  color: white;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}

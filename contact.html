@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/75959ada6e.js" crossorigin="anonymous"></script>
+    <title>Super Duper Ice Cream</title>
+</head>
+    <header>
+        <div class="container">
+          <div id="branding">
+            <h1>Super Duper Ice Cream Shop</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./flavors.html">Flavors</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div onclick="myFunction()" class="dropdown">
+              <i class="fas fa-bars dropbtn" style="font-size: 50px;"></i>
+          <div id="myDropdown" class="dropdown-content">
+              <a href="./index.html">Home</a>
+              <a href="./about.html">About</a>
+              <a href="./flavors.html">Flavors</a>
+              <a href="./contact.html">Contact</a>
+          </div>
+          </div>
+          </nav>
+        </div>
+    </header>
+
+    <section id="banner">
+      <div class="container">
+      <div class="logo"><img class="iceBanner" src="./hoemImage2.jpg" alt=""></div> 
+      </div>
+    </section>
+
+
+    <section2>
+      <div id="about" class="container">
+        <h1>Contact Us!</h1>
+      </div>
+    </section2>
+    
+    <section id="contact" class="container">
+      <div class="message">
+        <p>We love our ice cream and hope you do too! </p>
+        <p>If you have any questions, please contact us below!</p>
+      </div>
+      <div class="message">
+        <p>Contact Forum </p>
+      </div>
+      <div class="message">
+        <div class="container-message">
+          <form method="post">
+            <label>*First Name:</label><input class="input_1" placeholder="First Name" id="myFName" name="myFName" required>
+            <label>*Last Name:</label><input class="input_1" placeholder="Last Name" id="myLName" name="myLName" required>
+            <label>*E-mail:</label><input class="input_1" placeholder="E-mail" type="email" id="myEmail" name="myEmail" required>
+            <label>*Phone:</label><input class="input_1" placeholder="Phone" type="tel" id="myPhone" name="myPhone" maxlength="12" required>
+            <label>*Comments:</label><textarea id="myComments" name="myComments" rows="3" cols="24" required></textarea>
+            <button class="submit" type="submit" value="Submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+    </section>
+    
+
+    <footer>
+      <div class="container">
+        <div class="box"><h1>Our Company</h1>
+          <ul>
+            <li>About Us</li>
+            <li>Terms of Use</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="box"><h1>Employment</h1>
+        <ul>
+          <li>Career Opportunites </li>
+        </ul>
+        </div>
+        <div class="box"><h1>Social Media</h1>
+          <ul>
+            <li><i class="fab fa-facebook-square"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter-square"></i></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+              }
+          }
+          }
+      }
+      </script>
+</body>
+</html>
